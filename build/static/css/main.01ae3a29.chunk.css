@@ -1,0 +1,2 @@
+body{margin:0;background-color:#000}.game-of-life{height:100vh;display:flex;justify-content:center;align-items:center}.world{height:80vmin;width:85vmin;background-color:#000;border-style:solid;border-color:#ee34d2;display:grid;grid-template-columns:repeat(100,1fr)}.cell{display:flex;justify-content:center;align-items:center;border:1px;border-radius:50%}.bullseye{display:flex;padding:1.5px;border-radius:50%;background-color:#000}
+/*# sourceMappingURL=main.01ae3a29.chunk.css.map */
