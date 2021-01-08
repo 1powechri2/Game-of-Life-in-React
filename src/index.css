@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.game-of-life {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.world {
+  height: 80vmin;
+  width: 85vmin;
+  background-color: black;
+  border-style: solid;
+  border-color: #EE34D2;
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px;
+  border-radius: 50%;
+}
+
+.bullseye {
+  display: flex;
+  padding: 1.5px;
+  border-radius: 50%;
+  background-color: black;
+}
