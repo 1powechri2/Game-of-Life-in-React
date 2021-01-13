@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-const game = require('./game-of-life-code/game_of_life');
-const gOF = new game(100,100);
+// const game = require('./game-of-life-code/game_of_life');
+
+import GameOfLife from './game-of-life-code/game_of_life'
+const gOF = new GameOfLife(100,100);
 const firstWorld = gOF.world();
 
 class Cell extends React.Component {
@@ -59,7 +61,7 @@ class World extends React.Component {
   }
 }
 
-class GameOfLife extends React.Component {
+class GameLife extends React.Component {
   render() {
     return (
       <section className="game-of-life">
@@ -70,6 +72,6 @@ class GameOfLife extends React.Component {
 }
 
 ReactDOM.render(
-  <GameOfLife />,
+  <GameLife />,
   document.getElementById('root')
 );

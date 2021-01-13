@@ -96,4 +96,4 @@ class GameOfLife {
   }
 }
 
-module.exports = GameOfLife;
+export default GameOfLife;
