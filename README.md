@@ -1,3 +1,5 @@
+![Alt text](./Screen Shot 2021-01-17 at 1.46.23 PM.png?raw=true "Game Of Life")
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
