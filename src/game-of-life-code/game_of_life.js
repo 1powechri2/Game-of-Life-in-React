@@ -8,8 +8,7 @@ class GameOfLife {
     var world = [];
     var i, j;
     for(i = 0; i < this.height; i++) {
-      world[i] = new Array
-      let j = 0;
+      world[i] = new Array(this.width)
       for(j = 0; j < this.width; j++){
         world[i][j] = Math.round(Math.random());
       };
@@ -21,7 +20,7 @@ class GameOfLife {
     var emptyWorld = [];
     var i, j;
     for(i = 0; i < this.height; i++) {
-      emptyWorld[i] = new Array
+      emptyWorld[i] = new Array(this.width)
       for(j = 0; j < this.width; j++){
         emptyWorld[i][j] = null;
       };
@@ -30,10 +29,10 @@ class GameOfLife {
   }
 
   checkBoundaries(val1, val2) {
-    if (val1 == -1) {
+    if (val1 === -1) {
       return val2 -1;
     }
-    else if (val1 == val2) {
+    else if (val1 === val2) {
       return 0;
     }
     else {
@@ -65,10 +64,10 @@ class GameOfLife {
   }
 
   checkEvolution (status, neighbors) {
-    if (status == 1 && (neighbors == 2 || neighbors == 3)) {
+    if (status === 1 && (neighbors === 2 || neighbors === 3)) {
       return 'Live';
     }
-    else if (status == 0 && neighbors == 3) {
+    else if (status === 0 && neighbors === 3) {
       return 'Live';
     }
     else {

@@ -52,6 +52,7 @@ class World extends React.Component {
     var cells = this.state.cells.flat();
 
     return(
+
       <div className='world'>
         {cells.map(cell => (
           this.renderCell(cell)
